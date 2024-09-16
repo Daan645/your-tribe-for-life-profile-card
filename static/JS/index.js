@@ -1,11 +1,15 @@
-// Selecting the elements correctly
+// Elements
 const languagesContainer = document.querySelector('.languages-container');
 const languageHtml = document.querySelector('.languages-html');
 const htmlContents = document.querySelectorAll('.html-content');
+const htmlTagsButton = document.getElementById('html-tags-button');
+const htmlTags = document.querySelectorAll('.html-tags')
 
-// Adding an event listener to the HTML section
+// Eventlisteners
 languageHtml.addEventListener('click', moveLanguages);
+htmlTagsButton.addEventListener('click', htmlTagRain);
 
+// Functions
 function moveLanguages() {
     // Add a class to highlight the HTML section
     languageHtml.classList.add('languages-active');
@@ -20,4 +24,11 @@ function moveLanguages() {
     otherLanguages.forEach(language => {
         language.style.display = 'none'; // Hide other sections
     });
+}
+
+function htmlTagRain() {
+    htmlTags.forEach(tag => {
+        tag.classList.add('html-tags-rain');
+    });
+    console.log('make it rain');
 }

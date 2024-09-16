@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 :root{
@@ -33,13 +34,17 @@
    
      /* default font */
      font-family: Arial, Helvetica, sans-serif;  
+h1, h2, p, button {
+  color: var(--text-color);
+}
+
 
      /* Text size */
-     h2 {
+     h2{
       font-size: 3em;
      }
 
-     p {
+     p, button {
       font-size: 2em;
      }
   }
