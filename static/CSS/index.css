@@ -143,7 +143,12 @@ animation: languages-fade-in 0.2s ease-in;
     opacity: 100%;
 }
 
+.html-popup{
+    display: none;
+}
+
 .languages-active {
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     padding-top: 4em;
@@ -186,4 +191,15 @@ opacity: 0;
     transform: translateY(0);
     opacity: 20%;
 }
+}
+.html-content {
+display: none;
+}
+
+
+.language-text {
+    margin-top: 2em;
+    width: 90%;
+    text-align: center;
+    line-height: 1.2em;
 }

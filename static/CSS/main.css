@@ -33,6 +33,15 @@
    
      /* default font */
      font-family: Arial, Helvetica, sans-serif;  
+
+     /* Text size */
+     h2 {
+      font-size: 3em;
+     }
+
+     p {
+      font-size: 2em;
+     }
   }
 
 

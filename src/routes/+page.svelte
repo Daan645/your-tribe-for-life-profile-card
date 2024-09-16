@@ -33,14 +33,10 @@
             <div class="languages-container">
                 <section class="languages-html">
                     <h2>HTML</h2>
+                    <button class="html-content" id="closeHtml">X</button>
+                    <p class="html-content language-text"  id="html-text">Html bepaalt de basisstructuur van de website. Goede en semantische Html is essentieel voor een goede website en zorgt voor betere resultaten in zoekmachines. </p>
                     <box-icon type='logo' name='html5' size='10em'></box-icon>
                 </section>
-
-<section class="html-popup">
- 
-</section>
-
-
                 <section class="languages-css">
                     <h2>CSS</h2>
                     <box-icon name='css3' type='logo' size='10em'></box-icon>
