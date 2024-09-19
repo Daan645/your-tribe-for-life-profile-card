@@ -11,7 +11,7 @@
 ## ✏️ Beschrijving
 De opdracht was om een visite kaartje / portfolio te bouwen
 <!-- Voeg een mooie poster visual toe 📸 -->
-<a href="https://your-tribe-for-life-squad-page-lake.vercel.app/" alt="link naar squad page">Bekijk hier de website</a>
+<a href="https://your-tribe-for-life-profile-card-three.vercel.app/" alt="link naar squad page">Bekijk hier de website</a>
 
 ## 💻 Gebruik
 <!-- Bij Gebruik staat de user story, hoe het werkt en wat je er mee kan. -->
@@ -68,4 +68,4 @@ Door op de programmeer taal te klikken krijg je een popup met daarin de alle inf
 3. Open het terminal in de code editor
 4. Typ **npm install** in om alle benodigdheden voor het project te installeren
 5. Gebruik de link <a href="http://localhost:5173/">http://localhost:8001/</a> om het project lokaal te bekijken
-6. Mocht je het project online bekijken dan kan dat via <a href="https://proof-of-concept-eqsl.onrender.com/" alt="ANWB Weekplanner Website">deze link.</a>
+6. Mocht je het project online bekijken dan kan dat via <a href="https://your-tribe-for-life-profile-card-three.vercel.app/" alt="ANWB Weekplanner Website">deze link.</a>
