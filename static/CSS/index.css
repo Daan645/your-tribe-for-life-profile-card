@@ -1,3 +1,4 @@
+/* Whole page */
 .page-wrapper {
     flex-direction: column;
     height: 100vh;
@@ -5,6 +6,9 @@
 	scroll-snap-type: y mandatory;
 }
 
+
+
+/* hero */
 .hero, .languages {
     scroll-snap-align: start;
     height: 100vh; 
@@ -60,9 +64,10 @@
     animation: arrow-floating-animation 2s infinite;
 }
 
+
+
+
 /* html tags easter eggs */
-
-
 .html-tags {
     display: none;
     position: absolute;
@@ -122,45 +127,9 @@
     animation-delay: 2.2s;
 }
 
-@keyframes html-drop {
 
-    0% {
-        transform: translateY(-10%);
-    }
 
-    50% {
-        transform: translateY(100%);
-    }
-
-    70%{
-        transform: translateY(70%);
-    }
-
-    80% {
-        transform: translateY(100%);
-        scale: 0.8;
-    }
-
-    90% {
-        transform: translateY(80%);
-}
-
-95% {
-    transform: translateY(100%);
-
-}
-
-98% {
-    transform: translateY(90%);
-}
-
-    100% {
-        transform: translateY(95%);
-    }
-}
-
-/* Languages */
-
+/* Languages section */
 .languages {
     display: flex;
     flex-direction: column;
@@ -171,7 +140,7 @@
 }
 
 .language-title {
-    font-size: 3em;
+    font-size: 100%;
        margin-bottom: 1em;
 }
 
@@ -188,6 +157,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    font-size: 100%;
     border-right: solid 2px black;
     border-radius: 20px;
     height: 50vh;
@@ -196,7 +166,8 @@
     opacity: 20%;
     transition: 0.7s ease;
     margin: 0.5em;
-animation: languages-fade-in 0.2s ease-in;
+    animation: languages-fade-in 0.2s ease-in;
+    
 }
 
 .languages-mysql {
@@ -269,6 +240,29 @@ animation: languages-fade-in 0.2s ease-in;
     opacity: 100%;
 }
 
+.language-text {
+    margin-top: 2em;
+    width: 90%;
+    text-align: center;
+    line-height: 1.2em;
+}
+
+.close-button {
+    border-radius: var(--radius-large);
+    background-color: black;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+#closeHtml {
+    color: orange;
+    border: solid 5px orange;
+
+}
+
+/* animations */
+
+/* used on arrow */
 @keyframes arrow-floating-animation {
     0% {
         transform: translateY(-20%);
@@ -283,7 +277,45 @@ animation: languages-fade-in 0.2s ease-in;
     }
 }
 
+/* used on frontend developer button */
+@keyframes html-drop {
 
+    0% {
+        transform: translateY(-10%);
+    }
+
+    50% {
+        transform: translateY(100%);
+    }
+
+    70%{
+        transform: translateY(70%);
+    }
+
+    80% {
+        transform: translateY(100%);
+        scale: 0.8;
+    }
+
+    90% {
+        transform: translateY(80%);
+}
+
+95% {
+    transform: translateY(100%);
+
+}
+
+98% {
+    transform: translateY(90%);
+}
+
+    100% {
+        transform: translateY(95%);
+    }
+}
+
+/* Used on the languages section */
 @keyframes languages-fade-in {
 0% {
 transform: translateY(-30%);
@@ -300,9 +332,93 @@ display: none;
 }
 
 
-.language-text {
-    margin-top: 2em;
-    width: 90%;
-    text-align: center;
-    line-height: 1.2em;
-}
+
+/* media queries */
+@media only screen and (max-width: 1040px) {
+   .hero h1 {
+    font-size: 5em;
+   }
+
+   .languages-container {
+display: grid;
+grid-template-areas: "first-row", "first-row", "first-row",
+"second-row", "second-row", "second-row";
+   }
+
+ }
+
+ @media only screen and (max-width: 780px) {
+    
+    .hero {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 4em;
+    }
+    
+    .hero-arrow-container {
+     display: none;
+    }
+
+    .hero button {
+        font-size: 2.5em;
+        margin: 1em 0 0 0;
+    }
+  }
+
+  @media only screen and (max-width: 605px) {
+    
+    .hero {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 3.5em;
+    }
+    
+    .hero-arrow-container {
+     display: none;
+    }
+
+    .hero button {
+        font-size: 2em;
+        margin: 1em 0 0 0;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 533px) {
+    
+    .hero {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2.7em;
+    }
+    
+    .hero button {
+        font-size: 1.5em;
+        margin: 1em 0 0 0;
+    }
+  }
+
+
+
+  @media only screen and (max-width: 418px) {
+    
+    .hero {
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+    
+    .hero button {
+        font-size: 1em;
+        margin: 1em 0 0 0;
+    }
+  }

@@ -1,61 +1,45 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-:root{
-        /* ===== Colors ===== */
-        --body-color: black;
-        --text-color: #fff;
-      
-        /* ====== Transition ====== */
-        --tran-03: all 0.2s ease;
-        --tran-03: all 0.3s ease;
-        --tran-04: all 0.3s ease;
-        --tran-05: all 0.5s ease-in-out;
-        
-        /* Spacing */
-     --none: 0px;
-     --extra-small:  4px;
-     --small: 8px;
-     --medium: 16px;
-     --large: 32px;
-     --extra-large: 64px;
-     --extra-extra-large: 128px;
-     --buttons:  8px 16px;
-   
-     /* Borders */
-     --button: 4px;
-     --radius-small: 4px;
-     --radius-medium: 8px;
-     --radius-large: 120px;
-     --radius-extra-large: 16px;
-   
-     /* default font */
-     font-family: Arial, Helvetica, sans-serif;  
-h1, h2, p, button {
-  color: var(--text-color);
-}
+/* Default settings  */
+:root {
+  /* ===== Colors ===== */
+  --body-color: black;
+  --text-color: #fff;
 
 
-     /* Text size */
-     h2{
-      font-size: 3em;
-     }
+  /* ===== Borders ===== */
+  --button: 4px;
+  --radius-small: 4px;
+  --radius-medium: 8px;
+  --radius-large: 120px;
+  --radius-extra-large: 16px;
 
-     p, button {
-      font-size: 2em;
-     }
+  
+  
+  /* Default font settings */
+  h1, h2, p, button {
+    color: var(--text-color);
   }
 
-
-  body {
-background-color: var(--body-color);
-color: var(--text-color);
-  }
-
+  /* Default text size */
   h2 {
-    font-size: var(30em);
+    font-size: 3em;
   }
+
+  p, button {
+    font-size: 2em;
+  }
+}
+
+/* Default body styling */
+  body {
+  background-color: var(--body-color);
+  color: var(--text-color);
+  }
+
 
