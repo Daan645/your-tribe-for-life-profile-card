@@ -58,11 +58,23 @@
 
           <section class="languages-css">
             <h2>CSS</h2>
+            <button class="close-button html-content" id="closeHtml">X</button>
+            <p class="html-content language-text" id="html-text">
+              Html bepaalt de basisstructuur van de website. Goede en
+              semantische Html is essentieel voor een goede website en zorgt
+              voor betere resultaten in zoekmachines.
+            </p>
             <box-icon name="css3" type="logo" size="10em"></box-icon>
           </section>
 
           <section class="languages-js">
             <h2>Javascript</h2>
+            <button class="close-button html-content" id="closeHtml">X</button>
+            <p class="html-content language-text" id="html-text">
+              Html bepaalt de basisstructuur van de website. Goede en
+              semantische Html is essentieel voor een goede website en zorgt
+              voor betere resultaten in zoekmachines.
+            </p>
             <box-icon name="javascript" type="logo" size="10em"></box-icon>
           </section>
 
@@ -72,7 +84,7 @@
           </section>
 
           <section class="languages-php">
-            <h2>PHP</h2>
+          <h2>PHP</h2>
             <box-icon name="php" type="logo" size="10em"></box-icon>
           </section>
 
